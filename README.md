@@ -1,31 +1,49 @@
-# ZaBir | SnapView Image Viewer
+# 📷 ZaBir | Image Viewer
 
-**ZaBir | SnapView Image Viewer** is a modern desktop image viewer built with Python and Tkinter. It provides a clean, dark-themed interface for viewing images with zoom, rotation, flipping, full-screen viewing, and drag-and-drop support.
+**ZaBir | Image Viewer** is a modern desktop image viewer built with Python and Tkinter. It features a clean **cream-white interface, elegant glass-effect buttons, and a user-friendly layout** for viewing, transforming, and saving images.
+
+With essential image viewing tools, zoom controls, rotation, flipping, undo/redo functionality, and full-screen mode, SnapView provides a simple and comfortable image-viewing experience.
 
 ## ✨ Features
 
-- **Open Images:** Load images from your computer.
-- **Zoom Controls:** Zoom in and out using the mouse wheel.
-- **Fit to Preview:** Double-click the image to reset the zoom.
-- **Image Rotation:** Rotate images 90° left or right.
-- **Image Flipping:** Flip images horizontally or vertically.
-- **Full-Screen Mode:** View images in full-screen mode.
-- **Drag and Drop:** Open images by dragging them into the application.
-- **Image Information:** Display the filename, dimensions, format, and file size.
-- **Clear Image:** Clear the current preview and return to the default screen.
-- **Exit Button:** Close the application directly.
-- **Modern UI:** Enjoy a clean interface with a dark theme and purple accents.
+- **📂 Open Images:** Load images directly from your computer.
+- **💾 Save As:** Save images to your preferred location and choose the output format.
+- **🔍 Zoom Controls:** Zoom in and out using the mouse wheel.
+- **🖼️ Fit to Preview:** Double-click the preview to reset the zoom and fit the image.
+- **🔄 Image Rotation:** Rotate images 90° left or right.
+- **↔️ Image Flipping:** Flip images horizontally or vertically.
+- **↩️ Undo & Redo:** Undo or redo recent image transformations.
+- **🖥️ Full-Screen Mode:** View images in full-screen mode for a larger preview.
+- **🖱️ Drag and Drop:** Open images by dragging and dropping them into the application.
+- **📋 Image Information:** Display the filename, dimensions, format, and file size.
+- **🧹 Clear Image:** Clear the current image and return to the default preview.
+- **🚪 Exit Button:** Close the application using the Exit button.
+- **🎨 Modern Glass UI:** Enjoy a cream-white theme with subtle button shadows, elegant borders, and hover effects.
+- **⌨️ Keyboard Shortcuts:** Quickly access common actions using keyboard shortcuts.
+
+## 🎨 User Interface
+
+SnapView features a clean, modern design focused on simplicity and usability.
+
+- **Cream-white background** for a warm, comfortable viewing experience.
+- **Glass-inspired buttons** with subtle shadows and borders.
+- **Smooth hover effects** for improved interaction.
+- **Organized toolbar** with Open Image, editing controls, and Save As.
+- **Clear image preview area** for viewing images at different zoom levels.
+- **Minimal and user-friendly layout** designed for everyday use.
 
 ## 🛠️ Technologies Used
 
-- **Python** — Core programming language.
-- **Tkinter** — Desktop graphical user interface.
-- **Pillow (PIL)** — Image loading, processing, rotation, flipping, and resizing.
-- **tkinterdnd2** — Optional drag-and-drop functionality.
+| Technology | Purpose |
+|---|---|
+| **Python** | Core programming language |
+| **Tkinter** | Desktop graphical user interface |
+| **Pillow (PIL)** | Image loading, processing, rotation, flipping, and resizing |
+| **tkinterdnd2** | Optional drag-and-drop functionality |
 
 ## 📋 Supported Image Formats
 
-The application supports the following image formats:
+SnapView supports common image formats, including:
 
 - PNG
 - JPG / JPEG
@@ -34,50 +52,51 @@ The application supports the following image formats:
 - TIFF
 - WebP
 
-## 🚀 Installation
-
-### Install Python
-
-Download and install Python from the official website:
-
-https://www.python.org/downloads/
-
-Make sure Python is added to your system's PATH.
+**Note:** Animated GIFs are displayed as static images rather than played as animations.
 
 ## ⌨️ Keyboard Shortcuts
 
 | Shortcut | Action |
 |---|---|
 | `Ctrl + O` | Open an image |
+| `Ctrl + S` | Save the current image using Save As |
+| `Ctrl + Z` | Undo the last change |
+| `Ctrl + Y` | Redo the last undone change |
+| `Ctrl + Shift + Z` | Redo the last undone change |
 | `F11` | Toggle full-screen mode |
-| `Esc` | Exit full-screen mode or clear the image |
+| `Esc` | Exit full-screen mode or clear the image, depending on the current state |
 | Mouse Wheel | Zoom in or out |
-| Double-click | Reset zoom to fit |
+| Double-click | Fit the image to the preview |
+| Mouse Drag | Move the zoomed image within the preview |
 
 ## 🖼️ How to Use
 
-1. Launch the application.
-2. Click **Open image** to select an image from your computer.
-3. Use the mouse wheel to zoom in or out.
-4. Double-click the preview to reset the zoom.
-5. Use the rotation buttons to rotate the image.
-6. Use the flip buttons to flip the image horizontally or vertically.
-7. Press `F11` to enter or exit full-screen mode.
-8. Click **Clear** to remove the current image.
-9. Click **Exit** to close the application.
+1. **Launch SnapView** by running the Python script.
+2. **Open an image** by clicking the Open Image button or pressing `Ctrl + O`.
+3. **Zoom in or out** using the mouse wheel.
+4. **Fit the image to the preview** by double-clicking the image.
+5. **Rotate the image** using the Rotate Left or Rotate Right buttons.
+6. **Flip the image** horizontally or vertically using the flip buttons.
+7. **Undo or redo changes** using the Undo and Redo buttons or keyboard shortcuts.
+8. **Save your image** by clicking Save As or pressing `Ctrl + S`, then choosing the destination and filename.
+9. **Enter full-screen mode** by pressing `F11`.
+10. **Clear the preview** using the Clear button when you want to open another image.
+11. **Exit the application** using the Exit button.
 
 You can also drag and drop an image into the application if `tkinterdnd2` is installed.
 
 ## ⚠️ Important Notes
 
-- Image rotation and flipping affect the preview only.
-- The original image file is not modified.
-- The application does not currently provide a Save As feature for transformed images.
+- The original image file is not overwritten when you open or transform an image. Use **Save As** to save the resulting image.
+- Undo and Redo let you navigate recent image transformations within the application's available history.
+- The available undo history is limited to the number of states maintained by the application.
 - Drag-and-drop functionality requires the optional `tkinterdnd2` package.
 - Animated GIFs are displayed as static images rather than played as animations.
+- Supported output formats depend on Pillow and the selected file format.
+- The application's appearance may vary slightly depending on the operating system and display settings.
 
 ## 👨‍💻 Author
 
 **ZaBir HaSan**
 
-⭐ **If you find this project useful, consider giving the repository a star on GitHub!**
+Made with ❤️ using Python and Tkinter.
