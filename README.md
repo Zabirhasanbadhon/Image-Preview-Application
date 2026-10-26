@@ -71,7 +71,7 @@ SnapView supports common image formats, including:
 
 ## 🖼️ How to Use
 
-1. **Launch SnapView** by running the Python script.
+1. **Launch Image Viewer** by running the Python script.
 2. **Open an image** by clicking the Open Image button or pressing `Ctrl + O`.
 3. **Zoom in or out** using the mouse wheel.
 4. **Fit the image to the preview** by double-clicking the image.
