@@ -95,7 +95,7 @@ You can also drag and drop an image into the application if `tkinterdnd2` is ins
 - Supported output formats depend on Pillow and the selected file format.
 - The application's appearance may vary slightly depending on the operating system and display settings.
 
-## 👨‍💻 Author
+## 👨‍💻 Developer
 
 **ZaBir HaSan**
 
